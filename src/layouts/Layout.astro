@@ -24,9 +24,11 @@ import Nav from '../components/Nav.astro';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 	</head>
 	<body>
-		<Nav
-		  directory={directory}
-		/>
+		<ul class={directory}>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/about/">About</a></li>
+		  <li><a href="/blog/">Blog</a></li>
+		</ul>
 		<slot />
 	</body>
 </html>
