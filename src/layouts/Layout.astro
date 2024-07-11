@@ -23,11 +23,38 @@ import '../styles/index.scss';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 	</head>
 	<body>
-		<ul class={directory}>
-		  <li><a href="/">Home</a></li>
-		  <li><a href="/about/">About</a></li>
-		  <li><a href="/blog/">Blog</a></li>
-		</ul>
+		<header class={directory}>
+		  <h1 class="l-header-logo c-lineLayout">NorthDetail</h1>
+		  <nav class="l-header-nav">
+		    <ul class="l-header-navList">
+		      <li class="l-header-navListItem">
+				  <a class="c-textLink" href="/">Home</a>
+				</li>
+				<li class="l-header-navListItem">
+				  <a class="c-textLink" href="/about/">About</a>
+				</li>
+				<li class="l-header-navListItem">
+				  <a class="c-textLink" href="/service/">Service</a>
+				</li>
+				<li class="l-header-navListItem">
+				  <a class="c-textLink" href="/recruit/">Recruit</a>
+				</li>
+			  </ul>
+			</nav>
+			<dl class="l-header-floating">
+			  <dt class="l-header-floatingCatch">Create Social Value</dt>
+			  <dd class="l-header-floatingNav">
+				<ul class="l-header-floatingNavList">
+				  <li class="l-header-floatingNavListItem">
+					<a class="c-textLink" href="/blog/">Blog</a>
+				  </li>
+				  <li class="l-header-floatingNavListItem">
+					<a class="c-textLink" href="/contact/">Contact</a>
+				  </li>
+				</ul>
+			  </dd>
+			</dl>
+		  </header>
 		<slot />
 	</body>
 </html>

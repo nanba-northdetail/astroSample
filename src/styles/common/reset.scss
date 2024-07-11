@@ -13,10 +13,14 @@ body{
   }
   @include sp(){
     font-size:1.3rem;
-    background:$light-color;
+    background:$color-invert;
   }
 }
 ul,
 ol{
   list-style:none;
+}
+a{
+  text-decoration:none;
+  transition:all .75s ease;
 }

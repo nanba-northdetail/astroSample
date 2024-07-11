@@ -1,0 +1,28 @@
+.c-textLink{
+    font-weight:700;
+    color:$dark-color;
+    &:hover{
+      color:$color-invert;
+      background:$color-main;
+    }
+  }
+  .c-lineDecoration{
+    font-weight:400;
+    position:relative;
+    background:linear-gradient($color-invert 60%,$color-grayLight 60%,$color-invert 85%);  
+  }
+  .c-lineLayout{
+    display:inline-block;
+    position:relative;
+    &:after{
+      content:"";
+      width:100%;
+      height:5px;
+      position:absolute;
+      bottom:25%;
+      left:5px;
+      background:$color-grayLight;
+      transform:skew(-30deg)rotate(-3deg);
+      z-index:-1;
+    }
+  }
