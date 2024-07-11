@@ -1,53 +1,32 @@
 ---
 interface Props {
 	title: string;
+	directory: string;
 }
 
 const { title } = Astro.props;
-import Nav from '../components/nav.astro';
+const { directory } = Astro.props;
+import '../styles/index.scss';
+import Nav from '../components/Nav.astro';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ja">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+		<meta name="format-detection" content="telephone=no,address=no,email=no">
+		<meta name="description" content="">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="https://www.northdetail.co.jp/img/icons/ogimage.jpg">
 		<title>{title}</title>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 	</head>
 	<body>
-		<Nav />
+		<Nav
+		  directory={directory}
+		/>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>

@@ -1,6 +1,10 @@
 ---
+interface Props {
+	directory: string;
+}
+const { directory } = Astro.props;
 ---
-<ul role="list" class="link-card-grid">
+<ul class={directory}>
   <li><a href="/">Home</a></li>
   <li><a href="/about/">About</a></li>
   <li><a href="/blog/">Blog</a></li>

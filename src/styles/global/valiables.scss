@@ -1,0 +1,21 @@
+/* breakPoint
+-----------------------------*/
+$sp:768px;
+@mixin pc{
+  @media (min-width: $sp){
+    @content;
+  }
+}
+@mixin sp{
+  @media (max-width: ($sp) - 1){
+    @content;
+  }
+}
+
+/* themeColor
+-----------------------------*/
+$theme-dark-color:#c00;
+$theme-light-color:#ffbfbf;
+$dark-color:#333;
+$light-color:#fff;
+$gap:1em;
