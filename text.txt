@@ -1,6 +1,12 @@
 
 
-
+◆Github
 https://github.com/nanba-northdetail/astroSample
+◆netlify
+https://app.netlify.com/sites/voluble-entremet-4f3253/overview
+
+◆デプロイ後ブラウズ
+https://voluble-entremet-4f3253.netlify.app/
+
 
 
