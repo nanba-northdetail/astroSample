@@ -21,6 +21,26 @@ import '../styles/index.scss';
     <meta property="og:image" content="https://www.northdetail.co.jp/img/icons/ogimage.jpg">
     <title>{title}</title>
 	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="preload" as="font" href="/fonts/NotoSansJP400.woff2" crossorigin>
+    <link rel="preload" as="font" href="/fonts/NotoSansJP700.woff2" crossorigin>
+    <style>
+	@font-face {
+	  font-family: 'Noto Sans JP';
+	  font-style: normal;
+	  font-weight: 400;
+	  font-display: swap;
+	  src: url('/fonts/NotoSansJP400.woff2') format('woff2'),
+		   url('/fonts/NotoSansJP400.woff') format('woff');
+	}
+	@font-face {
+	  font-family: 'Noto Sans JP';
+	  font-style: normal;
+	  font-weight: 700;
+	  font-display: swap;
+	  src: url('/fonts/NotoSansJP700.woff2') format('woff2'),
+		   url('/fonts/NotoSansJP700.woff') format('woff');
+	}
+    </style>
   </head>
   <body>
     <header class={directory}>
