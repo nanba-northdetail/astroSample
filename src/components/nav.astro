@@ -1,4 +1,7 @@
 ---
+interface Props {
+	directory: string;
+}
 const { directory } = Astro.props;
 ---
 <ul class={directory}>
