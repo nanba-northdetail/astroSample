@@ -2,67 +2,68 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
+
 <Layout
   title="Welcome to Astro."
-  directory="l-header u-mt-100vh"
+  directory="l-header top u-mt-100vh"
 >
-	<main>
-		<div class="p-movie">
-			<iframe src="https://www.youtube.com/embed/WLIv7HnZ_fE?autoplay=1&disablekb=1&mute=1&playsinline=1&loop=1&playlist=WLIv7HnZ_fE&controls=0"></iframe>
-		  </div>
-		<h1>Welcome to <span class="text-gradient">AstroSample</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/"
-				title="Home"
-				body="Top page."
-			/>
-			<Card
-				href="/about/"
-				title="About"
-				body="About page."
-			/>
-			<Card
-				href="/blog/"
-				title="Blog"
-				body="Blog page❤️"
-			/>
-			<Card
-				href="/"
-				title="Home"
-				body="Top page."
-			/>
-			<Card
-				href="/about/"
-				title="About"
-				body="About page."
-			/>
-			<Card
-				href="/blog/"
-				title="Blog"
-				body="Blog page❤️"
-			/>
-			<Card
-				href="/"
-				title="Home"
-				body="Top page."
-			/>
-			<Card
-				href="/about/"
-				title="About"
-				body="About page."
-			/>
-			<Card
-				href="/blog/"
-				title="Blog"
-				body="Blog page❤️"
-			/>
-		</ul>
-	</main>
+  <main>
+    <div class="p-movie">
+      <iframe src="https://www.youtube.com/embed/WLIv7HnZ_fE?autoplay=1&disablekb=1&mute=1&playsinline=1&loop=1&playlist=WLIv7HnZ_fE&controls=0"></iframe>
+    </div>
+    <h1>Welcome to <span class="text-gradient">AstroSample</span></h1>
+    <p class="instructions">
+      To get started, open the directory <code>src/pages</code> in your project.<br />
+      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+    </p>
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="/"
+        title="Home"
+        body="Top page."
+      />
+      <Card
+        href="/about/"
+        title="About"
+        body="About page."
+      />
+      <Card
+        href="/blog/"
+        title="Blog"
+        body="Blog page❤️"
+      />
+      <Card
+        href="/"
+        title="Home"
+        body="Top page."
+      />
+      <Card
+        href="/about/"
+        title="About"
+        body="About page."
+      />
+      <Card
+        href="/blog/"
+        title="Blog"
+        body="Blog page❤️"
+      />
+      <Card
+        href="/"
+        title="Home"
+        body="Top page."
+      />
+      <Card
+        href="/about/"
+        title="About"
+        body="About page."
+      />
+      <Card
+        href="/blog/"
+        title="Blog"
+        body="Blog page❤️"
+      />
+    </ul>
+  </main>
 </Layout>
 <style>
 .p-movie{

@@ -4,35 +4,34 @@ import Card from '../components/Card.astro';
 const pageTitle = "Blog";
 ---
 
-<Layout title="Blog index" directory="l-header">
-	<main>
-		<h1><span class="text-gradient">AstroSample - {pageTitle}</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="/"
-				title="Home"
-				body="Top page."
-			/>
-			<Card
-				href="/about/"
-				title="About"
-				body="About page."
-			/>
-			<Card
-				href="/blog/"
-				title="Blog"
-				body="Blog page❤️"
-			/>
-		</ul>
-        <ul>
-          <li><a href="/posts/post-1/">記事1</a></li>
-          <li><a href="/posts/post-2/">記事2</a></li>
-          <li><a href="/posts/post-3/">記事3</a></li>
-        </ul>
-    </main>
+<Layout title="Blog index" directory="l-header blog">
+  <main>
+    <h1><span class="text-gradient">AstroSample - {pageTitle}</span></h1>
+    <p class="instructions">
+      To get started, open the directory <code>src/pages</code> in your project.<br />
+      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+    </p>
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="/"
+        title="Home"
+        body="Top page."
+      />
+      <Card
+        href="/about/"
+        title="About"
+        body="About page."
+      />
+      <Card
+        href="/blog/"
+        title="Blog"
+        body="Blog page❤️"
+      />
+    </ul>
+    <ul>
+      <li><a href="/posts/post-1/">記事1</a></li>
+      <li><a href="/posts/post-2/">記事2</a></li>
+      <li><a href="/posts/post-3/">記事3</a></li>
+    </ul>
+  </main>
 </Layout>
-

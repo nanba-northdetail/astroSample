@@ -1,115 +1,151 @@
 .l-header{
-    flex-wrap:wrap;
-    position:sticky;
-    top:0;
-    background:$color-invert;
-    border-bottom:1px solid $color-main;
-    z-index:1;
+  flex-wrap:wrap;
+  position:sticky;
+  top:0;
+  background:$color-invert;
+  border-bottom:1px solid $color-main;
+  z-index:1;
+  @include pc() {
+    display:flex;
+  }
+  @include sp() {
+    display:block;
+  }
+  &-logo{
+    margin:$gap * .5 $gap * .75 $gap * .25;
     @include pc() {
-      display:flex;
+      font-size:3rem;
     }
     @include sp() {
-      display:block;
+      font-size:2rem;
     }
-    &-logo{
-      margin:$gap * .5 $gap * .75 $gap * .25;
+  }
+  &-nav{
+    margin-left:auto;
+    display:flex;
+    & *{
+      display:flex;
+    }
+  }
+  &-navList{
+    list-style:none;
+    @include sp() {
+      width:100%;
+    }
+    &Item{
+      border-left:1px solid $color-main;
+      @include sp() {
+        display:block;
+        flex:1;
+        border-top:1px solid $color-main;
+        &:first-child{
+          border-left:none;
+        }
+      }
+      a{
+        padding:0 $gap;
+        align-items:center;
+        @include sp() {
+          padding:$gap 0;
+          font-size:1.2rem;
+          justify-content:center;
+        }
+      }
+    }
+  }
+  &-floating{
+    letter-spacing:.15em;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:1;
+    @include pc() {
+      border-top:1px solid $color-main;
+    }
+    @include sp() {
+      border:none;
+    }
+    &Catch{
       @include pc() {
-        font-size:3rem;
+        padding:0 $gap * 1.5;
+        font-weight:700;
       }
       @include sp() {
-        font-size:2rem;
+        padding:$gap * 1.25 $gap * .5 0;
+        font-size:1.2rem;
+        font-weight:400;
+        letter-spacing:1px;
+        position:absolute;
+        top:0;
+        right:0;
       }
     }
-    &-nav{
-      margin-left:auto;
-      display:flex;
-      & *{
-        display:flex;
-      }
-    }
-    &-navList{
-      list-style:none;
+    &Nav{
       @include sp() {
         width:100%;
+        position:absolute;
+        top:100vh;
+        transform:translateY(-100%);
       }
-      &Item{
-        border-left:1px solid $color-main;
+      &List{
+        list-style:none;
+        display:flex;
         @include sp() {
-          display:block;
-          flex:1;
+          background:$color-invert;
           border-top:1px solid $color-main;
-          &:first-child{
-            border-left:none;
-          }
         }
-        a{
-          padding:0 $gap;
-          align-items:center;
+        &Item{
+          border-left:1px solid $color-main;
           @include sp() {
-            padding:$gap 0;
-            font-size:1.2rem;
-            justify-content:center;
-          }
-        }
-      }
-    }
-    &-floating{
-      letter-spacing:.15em;
-      width:100%;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      z-index:1;
-      @include pc() {
-        border-top:1px solid $color-main;
-      }
-      @include sp() {
-        border:none;
-      }
-      &Catch{
-        @include pc() {
-          padding:0 $gap * 1.5;
-          font-weight:700;
-        }
-        @include sp() {
-          padding:$gap * 1.25 $gap * .5 0;
-          font-size:1.2rem;
-          font-weight:400;
-          letter-spacing:1px;
-          position:absolute;
-          top:0;
-          right:0;
-        }
-      }
-      &Nav{
-        @include sp() {
-          width:100%;
-          position:absolute;
-          top:100vh;
-          transform:translateY(-100%);
-        }
-        &List{
-          list-style:none;
-          display:flex;
-          @include sp() {
-            background:$color-invert;
-            border-top:1px solid $color-main;
-          }
-          &Item{
-            border-left:1px solid $color-main;
-            @include sp() {
-              flex:1;
-              &:first-child{
-                border-left:none;
-              }
+            flex:1;
+            &:first-child{
+              border-left:none;
             }
-            a{
-              padding:$gap * .75 $gap * 2;
-              text-align:center;
-              display:block;
-            }
+          }
+          a{
+            padding:$gap * .75 $gap * 2;
+            text-align:center;
+            display:block;
           }
         }
       }
     }
   }
+  &.top{
+    .c-textLink.top{
+      color:$color-invert;
+      background:$color-main;
+    }
+  }
+  &.about{
+    .c-textLink.about{
+      color:$color-invert;
+      background:$color-main;
+    }
+  }
+  &.service{
+    .c-textLink.service{
+      color:$color-invert;
+      background:$color-main;
+    }
+  }
+  &.recruit{
+    .c-textLink.recruit{
+      color:$color-invert;
+      background:$color-main;
+    }
+  }
+  &.blog{
+    .c-textLink.blog{
+      color:$color-invert;
+      background:$color-main;
+    }
+  }
+  &.contact{
+    .c-textLink.contact{
+      color:$color-invert;
+      background:$color-main;
+    }
+  }
+}

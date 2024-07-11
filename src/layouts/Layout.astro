@@ -11,50 +11,50 @@ import '../styles/index.scss';
 
 <!doctype html>
 <html lang="ja">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
-		<meta name="format-detection" content="telephone=no,address=no,email=no">
-		<meta name="description" content="">
-		<meta property="og:title" content="">
-		<meta property="og:description" content="">
-		<meta property="og:image" content="https://www.northdetail.co.jp/img/icons/ogimage.jpg">
-		<title>{title}</title>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-	</head>
-	<body>
-		<header class={directory}>
-		  <h1 class="l-header-logo c-lineLayout">NorthDetail</h1>
-		  <nav class="l-header-nav">
-		    <ul class="l-header-navList">
-		      <li class="l-header-navListItem">
-				  <a class="c-textLink" href="/">Home</a>
-				</li>
-				<li class="l-header-navListItem">
-				  <a class="c-textLink" href="/about/">About</a>
-				</li>
-				<li class="l-header-navListItem">
-				  <a class="c-textLink" href="/service/">Service</a>
-				</li>
-				<li class="l-header-navListItem">
-				  <a class="c-textLink" href="/recruit/">Recruit</a>
-				</li>
-			  </ul>
-			</nav>
-			<dl class="l-header-floating">
-			  <dt class="l-header-floatingCatch">Create Social Value</dt>
-			  <dd class="l-header-floatingNav">
-				<ul class="l-header-floatingNavList">
-				  <li class="l-header-floatingNavListItem">
-					<a class="c-textLink" href="/blog/">Blog</a>
-				  </li>
-				  <li class="l-header-floatingNavListItem">
-					<a class="c-textLink" href="/contact/">Contact</a>
-				  </li>
-				</ul>
-			  </dd>
-			</dl>
-		  </header>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://www.northdetail.co.jp/img/icons/ogimage.jpg">
+    <title>{title}</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+  </head>
+  <body>
+    <header class={directory}>
+      <h1 class="l-header-logo c-lineLayout">NorthDetail</h1>
+      <nav class="l-header-nav">
+        <ul class="l-header-navList">
+          <li class="l-header-navListItem">
+            <a class="c-textLink top" href="/">Home</a>
+          </li>
+          <li class="l-header-navListItem">
+            <a class="c-textLink about" href="/about/">About</a>
+          </li>
+          <li class="l-header-navListItem">
+            <a class="c-textLink service" href="/service/">Service</a>
+          </li>
+          <li class="l-header-navListItem">
+            <a class="c-textLink recruit" href="/recruit/">Recruit</a>
+          </li>
+        </ul>
+      </nav>
+      <dl class="l-header-floating">
+        <dt class="l-header-floatingCatch">Create Social Value</dt>
+        <dd class="l-header-floatingNav">
+          <ul class="l-header-floatingNavList">
+            <li class="l-header-floatingNavListItem">
+              <a class="c-textLink blog" href="/blog/">Blog</a>
+            </li>
+            <li class="l-header-floatingNavListItem">
+              <a class="c-textLink contact" href="/contact/">Contact</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+    </header>
+    <slot />
+  </body>
 </html>

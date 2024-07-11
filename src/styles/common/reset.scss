@@ -9,11 +9,9 @@ html{
 body{
   @include pc(){
     font-size:1.6rem;
-    background:$theme-light-color;
   }
   @include sp(){
     font-size:1.3rem;
-    background:$color-invert;
   }
 }
 ul,
