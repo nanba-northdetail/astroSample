@@ -2,6 +2,9 @@
   .#{$prefix}u-mt-100vh{margin-top:100vh !important;}
   .#{$prefix}u-mb-1{margin-bottom:calc($gap / 2) !important;}
   .#{$prefix}u-mb-2{margin-bottom:$gap !important;}
+  .#{$prefix}u-mb-3{margin-bottom:$gap * 1.5 !important;}
+  .#{$prefix}u-mb-4{margin-bottom:$gap * 2 !important;}
+  .#{$prefix}u-mb-5{margin-bottom:$gap * 2.5 !important;}
 }
 @include utiLitySpace();
 @include pc(){

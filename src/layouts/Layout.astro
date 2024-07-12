@@ -1,11 +1,12 @@
 ---
 interface Props {
-	title: string;
-	directory: string;
+  title: string;
+  directory: string;
 }
 
 const { title } = Astro.props;
 const { directory } = Astro.props;
+import Footer from '../components/Footer.astro';
 import '../styles/index.scss';
 ---
 
@@ -75,6 +76,9 @@ import '../styles/index.scss';
         </dd>
       </dl>
     </header>
-    <slot />
+
+	<slot />
+
+	<Footer />
   </body>
 </html>

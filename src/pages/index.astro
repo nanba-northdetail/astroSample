@@ -7,62 +7,95 @@ import Card from '../components/Card.astro';
   title="Welcome to Astro."
   directory="l-header top u-mt-100vh"
 >
-  <main>
+  <main class="l-main">
     <div class="p-movie">
       <iframe src="https://www.youtube.com/embed/WLIv7HnZ_fE?autoplay=1&disablekb=1&mute=1&playsinline=1&loop=1&playlist=WLIv7HnZ_fE&controls=0"></iframe>
     </div>
-    <h1>Welcome to <span class="text-gradient">AstroSample</span></h1>
-    <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="/"
-        title="Home"
-        body="Top page."
-      />
-      <Card
-        href="/about/"
-        title="About"
-        body="About page."
-      />
-      <Card
-        href="/blog/"
-        title="Blog"
-        body="Blog page❤️"
-      />
-      <Card
-        href="/"
-        title="Home"
-        body="Top page."
-      />
-      <Card
-        href="/about/"
-        title="About"
-        body="About page."
-      />
-      <Card
-        href="/blog/"
-        title="Blog"
-        body="Blog page❤️"
-      />
-      <Card
-        href="/"
-        title="Home"
-        body="Top page."
-      />
-      <Card
-        href="/about/"
-        title="About"
-        body="About page."
-      />
-      <Card
-        href="/blog/"
-        title="Blog"
-        body="Blog page❤️"
-      />
-    </ul>
+	<nav class="c-box u-mb-4">
+      <ul role="list" class="link-card-grid">
+        <Card
+          href="/"
+          title="Home"
+          body="Top page."
+        />
+        <Card
+          href="/about/"
+          title="About"
+          body="About page."
+        />
+        <Card
+          href="/service/"
+          title="Service"
+          body="Service page."
+        />
+        <Card
+          href="/recruit/"
+          title="Recruit"
+          body="Recruit page."
+        />
+        <Card
+          href="/blog/"
+          title="Blog"
+          body="Blog page❤️"
+        />
+        <Card
+          href="/contact/"
+          title="Contact"
+          body="Contact page❤️"
+        />
+      </ul>
+    </nav>
+    <section class="c-box">
+      <h2 class="c-box-title c-lineLayout">contents01</h2>
+      <p class="c-box-text">
+        楽しそうに生きてれば、地球の重力なんてなくなる<br>
+        その通り。わたしやあなたは、<strong class="c-lineDecoration">そのうち宙に浮かぶ</strong><br>
+        人生というのは川みたいなものだから、何をやってようと流されていくんだ。安定とか不安定なんていうのは、大きな川の流れの中  では些細なことなんだ。向かっていく方向に大差がないのなら、<strong class="c-lineDecoration">好きにすればいい</strong><br>
+        そういうのはさ、スランプ中のバッターに、キャッチャーのサインを盗んで教えるのと一緒なんだよ。その場しのぎなんだ。選手に  本当に必要なのは、狂ったバッティングフォームを直してあげることなのに。<br>
+        あるわけないことが起きるから、生きてるのは楽しいんだよ。
+      </p>
+      <p class="c-box-text">
+        そういうのはさ、スランプ中のバッターに、キャッチャーのサインを盗んで教えるのと一緒なんだよ。<br>
+		その場しのぎなんだ。選手に<strong class="c-lineDecoration">本当に必要なのは、狂ったバッティングフォームを直してあげること</strong>なのに。<br>
+        あるわけないことが起きるから、生きてるのは楽しいんだよ。
+        その通り。わたしやあなたは、<strong class="c-lineDecoration">そのうち宙に浮かぶ</strong><br>
+        人生というのは川みたいなものだから、何をやってようと流されていくんだ。安定とか不安定なんていうのは、大きな川の流れの中  では些細なことなんだ。向かっていく方向に大差がないのなら、<strong class="c-lineDecoration">好きにすればいい</strong><br>
+      </p>
+    </section>
+	<section class="c-box">
+	  <h2 class="c-box-title c-lineLayout">contents02</h2>
+	  <p class="c-box-text">
+	    楽しそうに生きてれば、地球の重力なんてなくなる<br>
+	    その通り。わたしやあなたは、<strong class="c-lineDecoration">そのうち宙に浮かぶ</strong><br>
+	    人生というのは川みたいなものだから、何をやってようと流されていくんだ。安定とか不安定なんていうのは、大きな川の流れの中  では些細なことなんだ。向かっていく方向に大差がないのなら、<strong class="c-lineDecoration">好きにすればいい</strong><br>
+	    そういうのはさ、スランプ中のバッターに、キャッチャーのサインを盗んで教えるのと一緒なんだよ。その場しのぎなんだ。選手に  本当に必要なのは、狂ったバッティングフォームを直してあげることなのに。<br>
+	    あるわけないことが起きるから、生きてるのは楽しいんだよ。
+	  </p>
+	  <p class="c-box-text">
+	    そういうのはさ、スランプ中のバッターに、キャッチャーのサインを盗んで教えるのと一緒なんだよ。<br>
+	    その場しのぎなんだ。選手に<strong class="c-lineDecoration">本当に必要なのは、狂ったバッティングフォームを直してあげること</strong>なのに。<br>
+		あるわけないことが起きるから、生きてるのは楽しいんだよ。
+		その通り。わたしやあなたは、<strong class="c-lineDecoration">そのうち宙に浮かぶ</strong><br>
+		人生というのは川みたいなものだから、何をやってようと流されていくんだ。安定とか不安定なんていうのは、大きな川の流れの中  では些細なことなんだ。向かっていく方向に大差がないのなら、<strong class="c-lineDecoration">好きにすればいい</strong><br>
+	  </p>
+	</section>
+	<section class="c-box">
+	  <h2 class="c-box-title c-lineLayout">contents03</h2>
+	  <p class="c-box-text">
+	    楽しそうに生きてれば、地球の重力なんてなくなる<br>
+	    その通り。わたしやあなたは、<strong class="c-lineDecoration">そのうち宙に浮かぶ</strong><br>
+	    人生というのは川みたいなものだから、何をやってようと流されていくんだ。安定とか不安定なんていうのは、大きな川の流れの中  では些細なことなんだ。向かっていく方向に大差がないのなら、<strong class="c-lineDecoration">好きにすればいい</strong><br>
+	    そういうのはさ、スランプ中のバッターに、キャッチャーのサインを盗んで教えるのと一緒なんだよ。その場しのぎなんだ。選手に  本当に必要なのは、狂ったバッティングフォームを直してあげることなのに。<br>
+	    あるわけないことが起きるから、生きてるのは楽しいんだよ。
+	  </p>
+	  <p class="c-box-text">
+	    そういうのはさ、スランプ中のバッターに、キャッチャーのサインを盗んで教えるのと一緒なんだよ。<br>
+	    その場しのぎなんだ。選手に<strong class="c-lineDecoration">本当に必要なのは、狂ったバッティングフォームを直してあげること</strong>なのに。<br>
+	    あるわけないことが起きるから、生きてるのは楽しいんだよ。
+	    その通り。わたしやあなたは、<strong class="c-lineDecoration">そのうち宙に浮かぶ</strong><br>
+	    人生というのは川みたいなものだから、何をやってようと流されていくんだ。安定とか不安定なんていうのは、大きな川の流れの中  では些細なことなんだ。向かっていく方向に大差がないのなら、<strong class="c-lineDecoration">好きにすればいい</strong><br>
+	  </p>
+    </section>
   </main>
 </Layout>
 <style>
