@@ -7,7 +7,6 @@ interface Props {
 const { title } = Astro.props;
 const { directory } = Astro.props;
 import Footer from '../components/Footer.astro';
-import '../styles/index.scss';
 ---
 
 <!doctype html>
@@ -82,3 +81,6 @@ import '../styles/index.scss';
 	<Footer />
   </body>
 </html>
+<style lang="scss">
+  @use "../styles/global/" as *;
+</style>

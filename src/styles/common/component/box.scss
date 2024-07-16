@@ -1,3 +1,5 @@
+@use "../../global/" as *;
+
 .c-box{
   @include pc() {
     padding: 0 $gap * 1.5;

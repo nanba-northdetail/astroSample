@@ -19,8 +19,9 @@ const { href, title, body } = Astro.props;
     </dl>
   </a>
 </li>
-<style>
-	.link-card {
+<style lang="scss">
+@use "../styles/global/" as *;
+.link-card {
 		list-style: none;
 		display: flex;
 		padding: 1px;

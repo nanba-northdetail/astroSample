@@ -1,3 +1,5 @@
+@use "../../global/" as *;
+
 @mixin utiLitySpace($prefix:""){
   .#{$prefix}u-mt-100vh{margin-top:100vh !important;}
   .#{$prefix}u-mb-1{margin-bottom:calc($gap / 2) !important;}

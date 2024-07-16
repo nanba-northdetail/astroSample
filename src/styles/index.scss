@@ -1,9 +1,2 @@
-@import "global/valiables.scss";
-@import "common/reset.scss";
-@import "common/utility/space.scss";
-@import "common/utility/width.scss";
-@import "common/component/list.scss";
-@import "common/component/hoverText.scss";
-@import "common/component/box.scss";
-@import "common/layout/header.scss";
-@import "common/layout/footer.scss";
+@forward  "global/";
+@forward  "common/";

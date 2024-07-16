@@ -1,3 +1,5 @@
+@use "../../global/" as *;
+
 @mixin utiLityWidth($prefix:""){
   .#{$prefix}u-width-25per{width:calc((100% - 3 * $gap) / 4) !important;}
   .#{$prefix}u-width-33per{width:calc((100% - 2 * $gap) / 3) !important;}

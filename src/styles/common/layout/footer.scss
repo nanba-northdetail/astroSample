@@ -1,3 +1,5 @@
+@use "../../global/" as *;
+
 .l-footer{
   margin-top: $gap * 2;
   border-top:1px solid $color-main;

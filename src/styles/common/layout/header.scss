@@ -1,3 +1,5 @@
+@use "../../global/" as *;
+
 .l-header{
   margin-bottom: $gap * 2;
   flex-wrap:wrap;
@@ -49,6 +51,7 @@
         @include sp() {
           padding:$gap 0;
           font-size:1.2rem;
+          flex: 1;
           justify-content:center;
         }
       }
