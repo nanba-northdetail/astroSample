@@ -1,6 +1,11 @@
 @use "../../global/" as *;
 
 @mixin utiLitySpace($prefix:""){
+  .#{$prefix}u-mt-1{margin-top:calc($gap / 2) !important;}
+  .#{$prefix}u-mt-2{margin-top:$gap !important;}
+  .#{$prefix}u-mt-3{margin-top:$gap * 1.5 !important;}
+  .#{$prefix}u-mt-4{margin-top:$gap * 2 !important;}
+  .#{$prefix}u-mt-5{margin-top:$gap * 2.5 !important;}
   .#{$prefix}u-mt-100vh{margin-top:100vh !important;}
   .#{$prefix}u-mb-1{margin-bottom:calc($gap / 2) !important;}
   .#{$prefix}u-mb-2{margin-bottom:$gap !important;}
