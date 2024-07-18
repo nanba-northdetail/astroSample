@@ -236,4 +236,71 @@ import '../styles/common/index.scss';
     }
   }
 }
+html.dark .l-header{
+  background:$dark-color;
+  border-bottom:1px solid $color-invert;
+  &-navList{
+    &Item{
+      border-left:1px solid $color-invert;
+      @include sp() {
+        border-top:1px solid $color-invert;
+      }
+    }
+  }
+  &-floating{
+    @include pc() {
+      border-top:1px solid $color-invert;
+    }
+    @include sp() {
+      border:none;
+    }
+    &Nav{
+      &List{
+        @include sp() {
+          background:$dark-color;
+          border-top:1px solid $color-invert;
+        }
+        &Item{
+          border-left:1px solid $color-invert;
+        }
+      }
+    }
+  }
+  &.top{
+    .c-textLink.top{
+      color:$dark-color;
+      background:$color-invert;
+    }
+  }
+  &.about{
+    .c-textLink.about{
+      color:$dark-color;
+      background:$color-invert;
+    }
+  }
+  &.service{
+    .c-textLink.service{
+      color:$dark-color;
+      background:$color-invert;
+    }
+  }
+  &.recruit{
+    .c-textLink.recruit{
+      color:$dark-color;
+      background:$color-invert;
+    }
+  }
+  &.blog{
+    .c-textLink.blog{
+      color:$dark-color;
+      background:$color-invert;
+    }
+  }
+  &.contact{
+    .c-textLink.contact{
+      color:$dark-color;
+      background:$color-invert;
+    }
+  }
+}
 </style>

@@ -8,10 +8,20 @@
     background:$color-main;
   }
 }
+html.dark .c-textLink{
+  color:$color-invert;
+  &:hover{
+    color:$dark-color;
+    background:$color-invert;
+  }
+}
 .c-lineDecoration{
   font-weight:400;
   position:relative;
   background:linear-gradient($color-invert 60%,$color-grayLight 60%,$color-invert 85%);  
+}
+html.dark .c-lineDecoration{
+  background:linear-gradient($dark-color 60%,$color-grayLight 60%,$dark-color 85%);  
 }
 .c-lineLayout{
   display:inline-block;

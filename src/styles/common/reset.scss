@@ -8,6 +8,10 @@
 html{
   font-size:10px;
 }
+html.dark{
+  color:$color-invert;
+  background:$dark-color;
+}
 body{
   font-family: "Noto Sans JP",sans-serif;
   @include pc(){
