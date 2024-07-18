@@ -28,11 +28,11 @@ const { frontmatter } = Astro.props;
 .c-taglist{
   margin:$gap 0;
   display:flex;
-  gap:$gap / 2;
+  gap:calc($gap / 2);
   .c-textLink{
     padding:0 1em;
     border:1px solid $dark-color;
-    border-radius:$gap / 2;
+    border-radius:calc($gap / 2);
   }
 }
 html.dark .c-taglist{
