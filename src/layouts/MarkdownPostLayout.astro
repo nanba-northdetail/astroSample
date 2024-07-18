@@ -11,9 +11,9 @@ const { frontmatter } = Astro.props;
       <p>著者: {frontmatter.author}</p>
       <ul class="c-taglist">
         <li>タグ：</li>
-        {frontmatter.tags.map((tag) => (
+        {frontmatter.tags.map((tag: string) => (
           <li class="c-taglist-item">
-            <a class="c-textLink" href={`/tags/${tag}`}>{tag}</a>
+            <a class="c-textLink" href={`/tags/{$tag}`}>{tag}</a>
           </li>
         ))}
       </ul>
