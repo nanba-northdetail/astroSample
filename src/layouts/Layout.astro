@@ -8,6 +8,7 @@ const { title } = Astro.props;
 const { directory } = Astro.props;
 import Footer from '../components/Footer.astro';
 import { ViewTransitions } from 'astro:transitions';
+import { slide } from 'astro:transitions';
 import '../styles/common/index.scss';
 ---
 
@@ -78,8 +79,9 @@ import '../styles/common/index.scss';
         </dd>
       </dl>
     </header>
-
+    <main transition:animate={slide({ duration: '0.1s' })}>
     <slot />
+  </main>
 
     <Footer />
   </body>
@@ -92,7 +94,7 @@ import '../styles/common/index.scss';
   top:0;
   background:$color-invert;
   border-bottom:1px solid $color-main;
-  z-index:1;
+  z-index:99999;
   @include pc() {
     display:flex;
   }
